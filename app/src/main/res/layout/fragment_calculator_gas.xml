@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/gasPriceFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/silver"
+    tools:context=".Fragments.calculatorGasFragment">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/insira_o_valor_da_gasolina_na_sua_regi_o"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:padding="10sp"
+        />
+
+    <EditText
+        android:id="@+id/etnaolprice"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        style="@style/ButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        android:layout_marginTop="90sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:hint="@string/pre_o_do_alcool"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/gasprice"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        style="@style/ButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etnaolprice"
+        android:layout_marginTop="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:hint="@string/pre_o_da_gasolina"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gasprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="100sp"
+        android:text="@string/calcular"
+        style="@style/ButtonStyle"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

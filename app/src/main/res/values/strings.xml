@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Gas Selector</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="current_prices">Preços Atuais</string>
+    <string name="pre_o_do_alcool">Preço do Alcool:</string>
+    <string name="pre_o_da_gasolina">Preço da Gasolina:</string>
+    <string name="digite_seu_consumo">Consumo em gasolina:</string>
+    <string name="calcular">Calcular</string>
+    <string name="consumo_em_alcool">Consumo em Alcool:</string>
+    <string name="insira_o_valor_da_gasolina_na_sua_regi_o">Insira o valor da gasolina na sua região</string>
+    <string name="insira_as_informa_es_do_seu_ve_culo_solicitadas_abaixo">Insira as informações do seu veículo solicitadas abaixo:</string>
+    <string name="pr_xima">Próxima</string>
+    <string name="modelo_do_motor">Modelo do motor :</string>
+    <string name="calculadora_do_combust_vel">Calculadora de Combustível</string>
+
+</resources>

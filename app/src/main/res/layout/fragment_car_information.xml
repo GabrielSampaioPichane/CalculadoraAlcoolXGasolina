@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/carInformationFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/silver"
+    tools:context=".Fragments.carInformation">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/insira_as_informa_es_do_seu_ve_culo_solicitadas_abaixo"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="50sp"
+        android:padding="10sp"
+        />
+
+    <EditText
+        android:id="@+id/carConsumGas"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        style="@style/ButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:layout_marginTop="60sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:hint="@string/digite_seu_consumo"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/carConsumAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        style="@style/ButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carConsumGas"
+        android:layout_marginTop="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:hint="@string/consumo_em_alcool"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/carMotor"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        style="@style/ButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carConsumAlcool"
+        android:layout_marginTop="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text=""
+        android:inputType="numberDecimal"
+        android:hint="@string/modelo_do_motor"
+        android:textColorHint="@color/white"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/bt_proxima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/carMotor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80sp"
+        android:text="@string/pr_xima"
+        style="@style/ButtonStyle"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
